@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@nabla/vite-plugin-eslint': ^1.4.1
   '@types/node': ^18.0.6
   '@types/react': ^18.0.15
   '@types/react-dom': ^18.0.6
@@ -40,6 +41,7 @@ dependencies:
   styled-components: 5.3.5_pumtretovylab5lwhztzjp2kuy
 
 devDependencies:
+  '@nabla/vite-plugin-eslint': 1.4.1_eslint@8.20.0+vite@3.0.2
   '@types/node': 18.0.6
   '@types/react': 18.0.15
   '@types/react-dom': 18.0.6
@@ -434,6 +436,18 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
 
+  /@nabla/vite-plugin-eslint/1.4.1_eslint@8.20.0+vite@3.0.2:
+    resolution: {integrity: sha512-H19ReYMRdy7i6zz7HKYcBlfv/4Nu/sv9Wtu9+GImQ5nzCgOz4RRUqnj/PJ2OuATcbxNgLr1NSbk7miJDdK6BOw==}
+    peerDependencies:
+      eslint: '*'
+      vite: ^2 || ^3
+    dependencies:
+      '@types/eslint': 8.4.5
+      chalk: 4.1.2
+      eslint: 8.20.0
+      vite: 3.0.2
+    dev: true
+
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -520,6 +534,17 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false
+
+  /@types/eslint/8.4.5:
+    resolution: {integrity: sha512-dhsC09y1gpJWnK+Ff4SGvCuSnk9DaU0BJZSzOwa6GVSg65XtTugLBITDAAzRU5duGBoXBHpdR/9jHGxJjNflJQ==}
+    dependencies:
+      '@types/estree': 1.0.0
+      '@types/json-schema': 7.0.11
+    dev: true
+
+  /@types/estree/1.0.0:
+    resolution: {integrity: sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==}
+    dev: true
 
   /@types/hoist-non-react-statics/3.3.1:
     resolution: {integrity: sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==}

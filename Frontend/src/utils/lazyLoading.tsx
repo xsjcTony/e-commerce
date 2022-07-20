@@ -2,7 +2,7 @@
 
 
 import { Suspense } from 'react'
-import Loading from '../components/UI/Loading'
+import Loading from '@/components/UI/Loading'
 import type { LazyExoticComponent } from 'react'
 
 

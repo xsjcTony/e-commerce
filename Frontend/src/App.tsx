@@ -3,18 +3,18 @@
 
 import { lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import lazyLoading from './utils/lazyLoading'
+import lazyLoading from '@/utils/lazyLoading'
 
 
 /**
  * Lazy loading components
  */
-const Home = lazyLoading(lazy(() => import('./pages/Home')))
-const Category = lazyLoading(lazy(() => import('./pages/Category')))
-const Cart = lazyLoading(lazy(() => import('./pages/Cart')))
-const Account = lazyLoading(lazy(() => import('./pages/Account')))
+const Home = lazyLoading(lazy(() => import('@/pages/Home')))
+const Category = lazyLoading(lazy(() => import('@/pages/Category')))
+const Cart = lazyLoading(lazy(() => import('@/pages/Cart')))
+const Account = lazyLoading(lazy(() => import('@/pages/Account')))
 
-const Page404 = lazyLoading(lazy(() => import('./components/UI/Page404')))
+const Page404 = lazyLoading(lazy(() => import('@/components/UI/Page404')))
 
 
 const App = (): JSX.Element => (

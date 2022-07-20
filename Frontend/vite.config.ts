@@ -4,10 +4,14 @@ import flexBugFixes from 'postcss-flexbugs-fixes'
 import pxToViewport from 'postcss-px-to-viewport'
 import writeSvg from 'postcss-write-svg'
 import { defineConfig } from 'vite'
+import tsconfigPaths from 'vite-tsconfig-paths'
 
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    tsconfigPaths()
+  ],
   server: {
     host: true
   },

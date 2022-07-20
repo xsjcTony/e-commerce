@@ -1,6 +1,8 @@
 import eslintPlugin from '@nabla/vite-plugin-eslint'
 import react from '@vitejs/plugin-react'
 import autoprefixer from 'autoprefixer'
+import jotaiDebugLabel from 'jotai/babel/plugin-debug-label'
+import jotaiReactRefresh from 'jotai/babel/plugin-react-refresh'
 import flexBugFixes from 'postcss-flexbugs-fixes'
 import pxToViewport from 'postcss-px-to-viewport'
 import writeSvg from 'postcss-write-svg'
@@ -10,7 +12,14 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 
 export default defineConfig({
   plugins: [
-    react(),
+    react({
+      babel: {
+        plugins: [
+          jotaiDebugLabel,
+          jotaiReactRefresh
+        ]
+      }
+    }),
     tsconfigPaths(),
     eslintPlugin({ formatter: 'stylish' })
   ],

@@ -6,7 +6,17 @@ import { atom } from 'jotai'
 import { extend } from 'umi-request'
 
 
-const devBaseUrl = 'http://127.0.0.1:5173'
+/**
+ * Types
+ */
+export interface ResponseData<T = unknown, U = string> {
+  code: number
+  msg: U
+  data: T
+}
+
+
+const devBaseUrl = 'http://127.0.0.1:3001'
 const prodBaseUrl = '' // TODO: Fill in production base URL
 
 const _devBaseUrlAtom = atom<string>(devBaseUrl)
@@ -17,7 +27,7 @@ export const prodBaseUrlAtom = atom(get => get(_prodBaseUrlAtom))
 
 
 const request = extend({
-  credentials: 'include', // cross-origin Cookie
+  // credentials: 'include', // cross-origin Cookie
   prefix: process.env.NODE_ENV === 'development' ? devBaseUrl : prodBaseUrl,
   timeout: 10000
 })

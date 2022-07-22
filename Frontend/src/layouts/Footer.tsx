@@ -1,7 +1,7 @@
 import { TabBar } from 'antd-mobile'
 import { memo } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import styles from './index.module.scss'
+import styles from './Footer.module.scss'
 import type { TabBarItemProps } from 'antd-mobile/es/components/tab-bar'
 import type { Key } from 'react'
 

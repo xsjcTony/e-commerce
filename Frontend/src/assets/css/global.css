@@ -56,5 +56,6 @@ ul {
 }
 
 #app .app-main {
-    padding-bottom: 90px;
+    width: 100%;
+    padding-bottom: 98px;
 }

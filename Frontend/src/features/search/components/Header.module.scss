@@ -1,0 +1,35 @@
+.nav-bar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+    box-shadow: 0 0 10px 0 rgba(154, 141, 141, .6);
+    --height: 90px;
+
+    :global {
+        .adm-nav-bar-left,
+        .adm-nav-bar-right {
+            flex: 0;
+        }
+    }
+
+    .search-bar {
+        --border-radius: 100px;
+    }
+
+    .search-nav-left {
+        color: #000;
+        font-size: 40px;
+    }
+
+    /*
+    :global {
+        .adm-search-bar-active .adm-search-bar-input-box {
+            border-color: transparent;
+        }
+    }
+    */
+}

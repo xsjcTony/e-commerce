@@ -43,13 +43,16 @@ export default defineConfig({
           mediaQuery: true,
           replace: true,
           landscape: false,
-          exclude: [/node_modules/]
+          exclude: [/node_modules/, /iconfont/]
         }),
         flexBugFixes(),
         writeSvg({
           utf8: false
         })
       ]
+    },
+    modules: {
+      localsConvention: 'camelCaseOnly'
     }
   }
 })

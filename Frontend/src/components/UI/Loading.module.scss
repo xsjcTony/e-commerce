@@ -1,0 +1,11 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    background: rgba(255, 255, 255, .5);
+    color: var(--adm-color-primary);
+}

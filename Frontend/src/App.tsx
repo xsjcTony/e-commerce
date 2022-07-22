@@ -3,6 +3,7 @@
 
 import { lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
+import Footer from '@/components/Footer'
 import lazyLoading from '@/utils/lazyLoading'
 
 
@@ -18,13 +19,18 @@ const Page404 = lazyLoading(lazy(() => import('@/components/UI/Page404')))
 
 
 const App = (): JSX.Element => (
-  <Routes>
-    <Route index element={<Home />} />
-    <Route path="/category" element={<Category />} />
-    <Route path="/cart" element={<Cart />} />
-    <Route path="/account" element={<Account />} />
-    <Route path="*" element={<Page404 />} />
-  </Routes>
+  <>
+    <main className="app-main">
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/category" element={<Category />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/account" element={<Account />} />
+        <Route path="*" element={<Page404 />} />
+      </Routes>
+    </main>
+    <Footer />
+  </>
 )
 
 

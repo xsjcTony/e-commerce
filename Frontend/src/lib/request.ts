@@ -27,7 +27,7 @@ export const prodBaseUrlAtom = atom(get => get(_prodBaseUrlAtom))
 
 
 const request = extend({
-  // credentials: 'include', // cross-origin Cookie
+  credentials: 'include', // cross-origin Cookie
   prefix: process.env.NODE_ENV === 'development' ? devBaseUrl : prodBaseUrl,
   timeout: 10000
 })

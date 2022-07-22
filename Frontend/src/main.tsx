@@ -3,7 +3,8 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import App from '@/App'
 import 'normalize.css'
-import '@/assets/global.css'
+import '@/assets/css/global.css'
+import '@/assets/iconfont/iconfont.css'
 
 
 const root = document.querySelector('#app')

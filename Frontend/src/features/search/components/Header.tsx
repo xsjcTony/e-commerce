@@ -1,5 +1,6 @@
 import { Button, NavBar, SearchBar } from 'antd-mobile'
 import { LeftOutline } from 'antd-mobile-icons'
+import clsx from 'clsx'
 import { memo } from 'react'
 import { useSearch } from '@/features/search'
 import styles from './Header.module.scss'
@@ -28,10 +29,9 @@ const Header = ({ navLeft = undefined, navRight = undefined }: HeaderProps): JSX
   return (
     <NavBar
       back={null}
-      className={styles.navBar}
+      className={clsx(styles.navBar, isSearching && styles.searching)}
       left={isSearching ? searchLeft : navLeft}
       right={isSearching ? searchRight : navRight}
-      style={{ backgroundColor: isSearching ? '#fff' : 'var(--adm-color-primary)' }}
     >
       <SearchBar
         className={styles.searchBar}

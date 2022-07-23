@@ -1,3 +1,4 @@
+import clsx from 'clsx'
 import { useNavigate } from 'react-router-dom'
 import Header, { useSearch } from '@/features/search'
 import Footer from '@/layouts/Footer'
@@ -30,7 +31,7 @@ const Home = (): JSX.Element => {
   return (
     <>
       <Header navLeft={navLeft} navRight={navRight} />
-      <div className={styles.content} style={{ display: isSearching ? 'none' : 'block' }}>
+      <div className={clsx(styles.content, isSearching && styles.searching)}>
         <h1>Home</h1>
         <p>1</p>
         <p>2</p>

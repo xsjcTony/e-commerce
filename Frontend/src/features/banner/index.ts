@@ -1,5 +1,6 @@
-export { default } from './components/Carousel'
 export * from './services'
+export * from './components/HomeBanner'
+export { default } from './components/Carousel'
 
 
 /**

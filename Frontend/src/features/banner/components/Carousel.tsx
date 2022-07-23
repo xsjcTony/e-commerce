@@ -1,4 +1,4 @@
-import { Skeleton, Swiper } from 'antd-mobile'
+import { Image, Skeleton, Swiper } from 'antd-mobile'
 import clsx from 'clsx'
 import { memo } from 'react'
 import styles from './Carousel.module.scss'
@@ -34,7 +34,10 @@ const Carousel = ({ bannerItems, className = void 0 }: CarouselProps): JSX.Eleme
               rel="noreferrer noopener"
               target="_blank"
             >
-              <img alt={item.title} className={styles.itemImage} src={item.image} />
+              <Image
+                alt={item.description}
+                src={item.image}
+              />
             </a>
           </Swiper.Item>
         ))

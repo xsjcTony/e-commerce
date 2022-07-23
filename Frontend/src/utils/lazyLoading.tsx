@@ -8,7 +8,7 @@ import type { LazyExoticComponent } from 'react'
 
 // eslint-disable-next-line react/display-name
 const lazyLoading = <P extends object = {}>(LazyComponent: LazyExoticComponent<any>) => (props: P): JSX.Element => (
-  <Suspense fallback={<Loading />}>
+  <Suspense fallback={<Loading fontSize={40} />}>
     <LazyComponent {...props} />
   </Suspense>
 )

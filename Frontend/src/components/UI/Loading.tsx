@@ -18,8 +18,8 @@ interface LoadingProps {
 /**
  * Component
  */
-const Loading = ({ tip = 'Loading...', fontSize = undefined }: LoadingProps): JSX.Element => (
-  <div className={styles.container} style={{ fontSize }}>
+const Loading = ({ tip = 'Loading...', fontSize = void 0 }: LoadingProps): JSX.Element => (
+  <div className={styles.container} style={{ '--font-size': fontSize ?? 'var(--adm-font-size-main)' }}>
     <DotLoading color="primary" />
     <p>{tip}</p>
   </div>

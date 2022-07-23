@@ -1,0 +1,36 @@
+{
+  "code": 200,
+  "message": "success",
+  "data": [
+    {
+      "id": 1,
+      "title": "On sale",
+      "description": "Items on sale",
+      "image": "https://m15.360buyimg.com/mobilecms/jfs/t1/152545/22/22923/44040/62a61b35Eb413b5ef/d96e7b045b72f576.jpg!cr_1125x449_0_166!q70.jpg",
+      "url": "https://www.google.com",
+      "type": 1,
+      "status": 1,
+      "sort": 2
+    },
+    {
+      "id": 2,
+      "title": "Hardware",
+      "description": "Computer hardware",
+      "image": "https://m15.360buyimg.com/mobilecms/s1062x420_jfs/t1/221811/25/11827/470923/621f1a8fEbc5fc995/bfd9bc5b7f5883e4.png!cr_1053x420_4_0!q70.jpg",
+      "url": "https://ebay.com.au",
+      "type": 1,
+      "status": 1,
+      "sort": 1
+    },
+    {
+      "id": 3,
+      "title": "Fruits",
+      "description": "Fresh fruits",
+      "image": "https://m15.360buyimg.com/mobilecms/s1062x420_jfs/t1/155997/8/25275/158819/619cc945Ef6b2f763/5a77b01ee8fb753f.jpg!cr_1053x420_4_0!q70.jpg",
+      "url": "https://amazon.com.au",
+      "type": 1,
+      "status": 1,
+      "sort": 0
+    }
+  ]
+}

@@ -19,7 +19,7 @@ interface HeaderProps {
 /**
  * Component
  */
-const Header = ({ navLeft = undefined, navRight = undefined }: HeaderProps): JSX.Element => {
+const Header = ({ navLeft = void 0, navRight = void 0 }: HeaderProps): JSX.Element => {
   const { isSearching, startSearching, stopSearching } = useSearch()
 
   const searchLeft = <LeftOutline className={styles.searchNavLeft} onClick={stopSearching} />

@@ -1,0 +1,21 @@
+.item {
+    display: block;
+    border-radius: 14px;
+    width: calc(100% - 50px);
+    margin: 0 auto;
+    overflow: hidden;
+
+    &.skeleton {
+        --height: 145.27Px;
+    }
+
+    .item-image {
+        width: 100%;
+    }
+}
+
+.indicator {
+    --dot-size: 10px;
+    --dot-border-radius: 50%;
+    --active-dot-size: 10px;
+}

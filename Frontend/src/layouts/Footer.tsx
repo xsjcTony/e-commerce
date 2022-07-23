@@ -1,4 +1,5 @@
 import { TabBar } from 'antd-mobile'
+import clsx from 'clsx'
 import { memo } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import styles from './Footer.module.scss'
@@ -15,17 +16,17 @@ const tabs: (TabBarItemProps & { key: Key })[] = [
   {
     key: '/category',
     title: 'Category',
-    icon: active => <span className={`iconfont ${active ? 'icon-appstore1' : 'icon-appstore'}`} style={{ fontSize: 22 }} />
+    icon: active => <span className={clsx('iconfont', active ? 'icon-appstore1' : 'icon-appstore')} style={{ fontSize: 22 }} />
   },
   {
     key: '/cart',
     title: 'Cart',
-    icon: active => <span className={`iconfont ${active ? 'icon-cartfill' : 'icon-cart'}`} style={{ fontSize: 24 }} />
+    icon: active => <span className={clsx('iconfont', `${active ? 'icon-cartfill' : 'icon-cart'}`)} style={{ fontSize: 24 }} />
   },
   {
     key: '/account',
     title: 'Me',
-    icon: active => <span className={`iconfont ${active ? 'icon-user' : 'icon-User'}`} style={{ fontSize: 22 }} />
+    icon: active => <span className={clsx('iconfont', `${active ? 'icon-user' : 'icon-User'}`)} style={{ fontSize: 22 }} />
   }
 ]
 

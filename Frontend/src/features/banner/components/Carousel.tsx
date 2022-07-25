@@ -2,7 +2,7 @@ import { Image, Skeleton, Swiper } from 'antd-mobile'
 import clsx from 'clsx'
 import { memo } from 'react'
 import styles from './Carousel.module.scss'
-import type { BannerItem } from '..'
+import type { BannerItem } from '@/features/banner'
 
 
 /**
@@ -17,20 +17,20 @@ interface CarouselProps {
 /**
  * Component
  */
-const Carousel = ({ bannerItems, className = void 0 }: CarouselProps): JSX.Element => (
-  <Swiper
-    autoplay
-    loop
-    className={className}
-    indicatorProps={{ className: styles.indicator }}
-  >
-    {
-      bannerItems.length !== 0
-        ? bannerItems.map(item => (
+const Carousel = ({ bannerItems, className = void 0 }: CarouselProps): JSX.Element =>
+  bannerItems.length !== 0
+    ? (
+      <Swiper
+        autoplay
+        loop
+        className={className}
+        indicatorProps={{ className: styles.indicator }}
+      >
+        {bannerItems.map(item => (
           <Swiper.Item key={item.id}>
             <a
               className={styles.item}
-              href={item.url}
+              href={item.url ? item.url : void 0}
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -40,14 +40,10 @@ const Carousel = ({ bannerItems, className = void 0 }: CarouselProps): JSX.Eleme
               />
             </a>
           </Swiper.Item>
-        ))
-        : (
-          <Swiper.Item>
-            <Skeleton animated className={clsx(styles.item, styles.skeleton)} />
-          </Swiper.Item>
-        )
-    }
-  </Swiper>
-)
+        ))}
+      </Swiper>
+    )
+    : <Skeleton animated className={clsx(styles.item, styles.skeleton, className)} />
+
 
 export default memo(Carousel)

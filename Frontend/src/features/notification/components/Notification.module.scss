@@ -1,0 +1,26 @@
+.notification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    --font-size: 35px;
+    font-size: var(--font-size);
+
+    .icon {
+        color: var(--adm-color-primary);
+    }
+
+    .carousel {
+        --height: var(--font-size);
+        color: #666;
+
+        .link {
+            color: #666;
+            text-decoration: none;
+        }
+    }
+
+    .skeleton {
+        --height: var(--font-size);
+    }
+}

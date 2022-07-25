@@ -1,6 +1,6 @@
-import { Toast } from 'antd-mobile'
 import { useEffect, useState } from 'react'
 import Carousel, { getBanner } from '@/features/banner'
+import Toast from '@/lib/toast'
 import styles from './HomeBanner.module.scss'
 import type { BannerItem } from '@/features/banner'
 
@@ -24,10 +24,7 @@ export const HomeBanner = (): JSX.Element => {
     getBanner()
       .then(res => void setBannerItems(res.data))
       .catch(() => {
-        Toast.show({
-          content: 'Error - banner',
-          icon: 'fail'
-        })
+        Toast.fail('Error - banner')
         setBannerItems([ErrorBannerItem])
       })
   }, [])

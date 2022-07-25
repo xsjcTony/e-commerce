@@ -1,6 +1,6 @@
-import { Toast } from 'antd-mobile'
 import { useEffect, useState } from 'react'
 import Notification, { getNotification } from '@/features/notification'
+import Toast from '@/lib/toast'
 import styles from './HomeNotification.module.scss'
 import type { Notification as NotificationType } from '@/features/notification'
 
@@ -23,10 +23,7 @@ export const HomeNotification = (): JSX.Element => {
     getNotification()
       .then(res => void setNotifications(res.data))
       .catch(() => {
-        Toast.show({
-          content: 'Error - notification',
-          icon: 'fail'
-        })
+        Toast.fail('Error - notification')
         setNotifications([ErrorNotificationItem])
       })
   }, [])

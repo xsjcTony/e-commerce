@@ -16,10 +16,11 @@
         .text {
             display: inline-block;
             overflow: hidden;
+            width: 100%;
+            color: var(--adm-color-text-secondary);
             text-decoration: none;
             white-space: nowrap;
             text-overflow: ellipsis;
-            width: 100%;
         }
     }
 

@@ -1,0 +1,27 @@
+.grid {
+    --gap-horizontal: 10px;
+    --gap-vertical: 20px;
+
+    .menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .icon {
+            --width: 80px;
+            --height: 80px;
+        }
+
+        .title {
+            color: var(--adm-color-text-secondary);
+            word-break: break-all;
+            margin-top: 10px;
+
+            &.skeleton {
+                --width: 80%;
+                --height: var(--adm-font-size-main);
+            }
+        }
+    }
+}

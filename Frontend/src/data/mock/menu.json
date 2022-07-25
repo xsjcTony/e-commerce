@@ -1,0 +1,86 @@
+{
+  "code": 200,
+  "message": "success",
+  "data": [
+    {
+      "id": 1,
+      "title": "Supermarket",
+      "description": "Supermarket",
+      "image": "//m15.360buyimg.com/mobilecms/jfs/t1/175540/24/19329/6842/60ec0b0aEf35f7384/ec560dbf9b82b90b.png!q70.jpg",
+      "url": "",
+      "type": 1,
+      "status": 1,
+      "sort": 0
+    },
+    {
+      "id": 2,
+      "title": "Electronics",
+      "description": "Electronics",
+      "image": "//m15.360buyimg.com/mobilecms/jfs/t1/178015/31/13828/6862/60ec0c04Ee2fd63ac/ccf74d805a059a44.png!q70.jpg",
+      "url": "",
+      "type": 1,
+      "status": 1,
+      "sort": 1
+    },
+    {
+      "id": 3,
+      "title": "Goods",
+      "description": "Goods",
+      "image": "//m15.360buyimg.com/mobilecms/jfs/t1/54043/33/19389/4660/62b049dbE3b9aef75/2fcd31afd5d702e4.png!q70.jpg",
+      "url": "",
+      "type": 1,
+      "status": 1,
+      "sort": 2
+    },
+    {
+      "id": 4,
+      "title": "Fresh",
+      "description": "Fresh",
+      "image": "//m15.360buyimg.com/mobilecms/jfs/t1/177902/16/13776/5658/60ec0e71E801087f2/a0d5a68bf1461e6d.png!q70.jpg",
+      "url": "",
+      "type": 1,
+      "status": 1,
+      "sort": 3
+    },
+    {
+      "id": 5,
+      "title": "Store Nearby",
+      "description": "Store Nearby",
+      "image": "//m15.360buyimg.com/mobilecms/jfs/t1/34248/39/16616/4689/62bbbdccE9f11132e/d51caf15f2f412b2.png!q70.jpg",
+      "url": "",
+      "type": 1,
+      "status": 1,
+      "sort": 4
+    },
+    {
+      "id": 6,
+      "title": "Coupon",
+      "description": "Coupon",
+      "image": "//m15.360buyimg.com/mobilecms/jfs/t1/186080/16/13681/8175/60ec0fcdE032af6cf/c5acd2f8454c40e1.png!q70.jpg",
+      "url": "",
+      "type": 1,
+      "status": 1,
+      "sort": 5
+    },
+    {
+      "id": 7,
+      "title": "Allowance",
+      "description": "Allowance",
+      "image": "//m15.360buyimg.com/mobilecms/jfs/t1/196711/35/12751/6996/60ec1000E21b5bab4/38077313cb9eac4b.png!q70.jpg",
+      "url": "",
+      "type": 1,
+      "status": 1,
+      "sort": 6
+    },
+    {
+      "id": 8,
+      "title": "Membership+",
+      "description": "Membership+",
+      "image": "//m15.360buyimg.com/mobilecms/jfs/t1/37709/6/15279/6118/60ec1046E4b5592c6/a7d6b66354efb141.png!q70.jpg",
+      "url": "",
+      "type": 1,
+      "status": 1,
+      "sort": 7
+    }
+  ]
+}

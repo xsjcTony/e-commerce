@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
-import Notification, { getNotification } from '@/features/notification'
+import Notification, { getNotifications } from '@/features/notification'
 import Toast from '@/lib/toast'
 import styles from './HomeNotification.module.scss'
 import type { Notification as NotificationType } from '@/features/notification'
 
 
-const ErrorNotificationItem: NotificationType = {
+const errorNotificationItem: NotificationType = {
   id: 0,
   title: 'N/A',
   description: 'N/A',
@@ -20,11 +20,11 @@ export const HomeNotification = (): JSX.Element => {
   const [notifications, setNotifications] = useState<NotificationType[]>([])
 
   useEffect(() => {
-    getNotification()
+    getNotifications()
       .then(res => void setNotifications(res.data))
       .catch(() => {
         Toast.fail('Error - notification')
-        setNotifications([ErrorNotificationItem])
+        setNotifications([errorNotificationItem])
       })
   }, [])
 

@@ -35,7 +35,7 @@ const Notification = ({ notifications, className = void 0 }: NotificationProps):
           {notifications.map(item => (
             <Swiper.Item key={item.id}>
               <a
-                className={styles.link}
+                className={styles.text}
                 href={item.url ? item.url : void 0}
                 rel="noreferrer noopener"
                 target="_blank"

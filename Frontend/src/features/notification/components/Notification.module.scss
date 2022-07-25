@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    --font-size: 35px;
     font-size: var(--font-size);
+    gap: 20px;
+    --font-size: 30px;
 
     .icon {
         color: var(--adm-color-primary);
@@ -13,8 +13,13 @@
     .carousel {
         --height: var(--font-size);
 
-        .link {
+        .text {
+            display: inline-block;
+            overflow: hidden;
             text-decoration: none;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 100%;
         }
     }
 

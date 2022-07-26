@@ -1,5 +1,4 @@
 import { Toast as AdmToast } from 'antd-mobile'
-import { show } from 'antd-mobile/es/components/toast/methods'
 import type { ToastHandler } from 'antd-mobile/es/components/toast'
 import type { ReactNode } from 'react'
 
@@ -11,7 +10,7 @@ interface ToastType {
   success: (content?: ReactNode, duration?: number) => ToastHandler
   fail: (content?: ReactNode, duration?: number) => ToastHandler
   loading: (content?: ReactNode, duration?: number) => ToastHandler
-  show: typeof show
+  show: typeof AdmToast.show
 }
 
 

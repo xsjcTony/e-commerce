@@ -1,0 +1,43 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #fff;
+    text-decoration: none;
+    gap: 10px;
+
+    .image {
+        --width: 100%;
+        aspect-ratio: 1;
+    }
+
+    .info {
+        padding: 0 20px 20px;
+
+        .name {
+            color: var(--adm-color-text-secondary);
+            overflow-wrap: break-word;
+        }
+
+        .price {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-top: 10px;
+            overflow: hidden;
+            gap: 10px;
+            height: 45px;
+
+            .number {
+                font-size: 40px;
+                font-style: normal;
+            }
+
+            .sold {
+                color: var(--adm-color-weak);
+            }
+        }
+    }
+}

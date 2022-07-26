@@ -1,5 +1,6 @@
 import clsx from 'clsx'
 import { HomeBanner } from '@/features/banner'
+import { HomeGoods } from '@/features/goods'
 import { HomeMenu } from '@/features/menu/components/HomeMenu'
 import { HomeNotification } from '@/features/notification'
 import { HomeNavBar, useSearch } from '@/features/search'
@@ -20,7 +21,7 @@ const Home = (): JSX.Element => {
         <HomeBanner />
         <HomeNotification />
         <HomeMenu />
-        <div>123</div>
+        <HomeGoods />
       </div>
       <Footer />
     </>

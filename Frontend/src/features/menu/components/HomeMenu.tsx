@@ -5,15 +5,17 @@ import styles from './HomeMenu.module.scss'
 import type { MenuItem } from '@/features/menu'
 
 
-const errorMenu: MenuItem[] = new Array(8).fill({
-  id: 0,
-  title: 'N/A',
-  description: 'N/A',
-  image: '/404',
-  url: '',
-  type: 1,
-  status: 0,
-  sort: 0
+const errorMenu: MenuItem[] = new Array(8).fill(void 0).map((_, index) => {
+  return {
+    id: index,
+    title: 'N/A',
+    description: 'N/A',
+    image: '/404',
+    url: '',
+    type: 1,
+    status: 0,
+    sort: 0
+  }
 })
 
 

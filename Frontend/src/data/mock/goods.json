@@ -1,0 +1,110 @@
+{
+  "code": 200,
+  "message": "success",
+  "data": [
+    {
+      "id": 1,
+      "name": "1800+ SOLD! AUS WOOLI UGG Unisex Genuine AU Sheepskin Short Ankle Boots",
+      "image": "//i.ebayimg.com/images/g/DNUAAOSwQPxi3jME/s-l200.jpg",
+      "price": 59,
+      "sold": 1263,
+      "description": "Product 1",
+      "sort": 1,
+      "sellStatus": 1,
+      "newStatus": 1,
+      "recommendStatus": 1,
+      "auditStatus": 1
+    },
+    {
+      "id": 2,
+      "name": "2000A Car Jump Starter Power Bank Pack Vehicle Charger Battery Engine TOPDON",
+      "image": "//i.ebayimg.com/images/g/OPwAAOSw3e5i1SDW/s-l200.jpg",
+      "price": 99,
+      "sold": 1699,
+      "description": "Product 2",
+      "sort": 1,
+      "sellStatus": 1,
+      "newStatus": 1,
+      "recommendStatus": 1,
+      "auditStatus": 1
+    },
+    {
+      "id": 3,
+      "name": "Dell 27 4K UHD USB-C Monitor - S2722QC 3840 x 2160 at 60 Hz 2xHDMI, USB-C",
+      "image": "//i.ebayimg.com/images/g/Zk8AAOSwe1RhJdBB/s-l200.jpg",
+      "price": 473.8,
+      "sold": 429,
+      "description": "Product 3",
+      "sort": 1,
+      "sellStatus": 1,
+      "newStatus": 1,
+      "recommendStatus": 1,
+      "auditStatus": 1
+    },
+    {
+      "id": 4,
+      "name": "Dyson Cyclone V10 Absolute+ Cordless Vacuum",
+      "image": "//i.ebayimg.com/images/g/Uv8AAOSwoP1iz5Jr/s-l200.jpg",
+      "price": 799998,
+      "sold": 1134,
+      "description": "Product 4",
+      "sort": 1,
+      "sellStatus": 1,
+      "newStatus": 1,
+      "recommendStatus": 1,
+      "auditStatus": 1
+    },
+    {
+      "id": 5,
+      "name": "AUSDOM ANC Wireless Active Noise Cancelling Headphones Bluetooth 5.0 Hifi Stereo",
+      "image": "//i.ebayimg.com/images/g/C50AAOSwq7hg-hZh/s-l200.jpg",
+      "price": 69,
+      "sold": 3699,
+      "description": "Product 5",
+      "sort": 1,
+      "sellStatus": 1,
+      "newStatus": 1,
+      "recommendStatus": 1,
+      "auditStatus": 1
+    },
+    {
+      "id": 6,
+      "name": "Ring Fit Adventure Switch Game NEW",
+      "image": "//i.ebayimg.com/images/g/wE0AAOSw9u9e8rTa/s-l200.jpg",
+      "price": 112.95,
+      "sold": 651,
+      "description": "Product 6",
+      "sort": 1,
+      "sellStatus": 1,
+      "newStatus": 1,
+      "recommendStatus": 1,
+      "auditStatus": 1
+    },
+    {
+      "id": 7,
+      "name": "Asus TM420IA-EC069T VivoBook Flip 14 R7 4700U 16GB RAM 512GB SSD 14\" Touch Win10",
+      "image": "//i.ebayimg.com/images/g/JWcAAOSw1aVgf74n/s-l200.jpg",
+      "price": 1099,
+      "sold": 23,
+      "description": "Product 7",
+      "sort": 1,
+      "sellStatus": 1,
+      "newStatus": 1,
+      "recommendStatus": 1,
+      "auditStatus": 1
+    },
+    {
+      "id": 8,
+      "name": "NEW Teka 10kg Front Load Washing Machine TFLW10",
+      "image": "//i.ebayimg.com/images/g/vkEAAOSwahJcmHqd/s-l200.jpg",
+      "price": 1135,
+      "sold": 1263,
+      "description": "Product 8",
+      "sort": 1,
+      "sellStatus": 1,
+      "newStatus": 1,
+      "recommendStatus": 1,
+      "auditStatus": 1
+    }
+  ]
+}

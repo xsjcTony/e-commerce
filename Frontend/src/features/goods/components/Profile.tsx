@@ -22,8 +22,7 @@ const Profile = ({ item, className = void 0 }: ProfileProps): JSX.Element => {
     style: 'currency',
     currency: 'AUD'
   }).format(item.price)
-  const priceInteger = /(?<=\$).+(?=\.)/.exec(formattedPrice)?.[0]
-  const priceDecimal = /(?<=\.)\d+/.exec(formattedPrice)?.[0]
+  const [, priceInteger, priceDecimal] = /([\d,]+)\.(\d+)/.exec(formattedPrice) ?? []
 
 
   return (

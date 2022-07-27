@@ -27,6 +27,7 @@ specifiers:
   postcss-write-svg: ^3.0.1
   react: ^18.2.0
   react-dom: ^18.2.0
+  react-error-boundary: ^3.1.4
   react-router-dom: ^6.3.0
   sass: ^1.54.0
   typescript: ^4.7.4
@@ -42,6 +43,7 @@ dependencies:
   normalize.css: 8.0.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-error-boundary: 3.1.4_react@18.2.0
   react-router-dom: 6.3.0_biqbaboplfbrettd7655fr4n2y
   umi-request: 1.4.0
 
@@ -2500,6 +2502,16 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-error-boundary/3.1.4_react@18.2.0:
+    resolution: {integrity: sha512-uM9uPzZJTF6wRQORmSrvOIgt4lJ9MC1sNgEOj2XGsDTRE4kmpWxg7ENK9EWNKJRMAOY9z0MuF4yIfl6gp4sotA==}
+    engines: {node: '>=10', npm: '>=6'}
+    peerDependencies:
+      react: '>=16.13.1'
+    dependencies:
+      '@babel/runtime': 7.18.9
+      react: 18.2.0
     dev: false
 
   /react-is/16.13.1:
